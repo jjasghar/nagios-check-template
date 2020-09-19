@@ -7,11 +7,14 @@ then
         echo "Missing parameters! Syntax: ./check_service.sh service_name"
         exit 3
 fi
-if ps ax | grep -v grep | grep $1 > /dev/null
+
+service=$1
+
+if pgrep -x $service > /dev/null
 then
-    echo "OK, $SERVICE service is running"
-        exit 0
+    echo "OK, $service service is running"
+    exit 0
 else
-    echo "CRITICAL , $SERVICE service is not running"
-        exit 2
+    echo "CRITICAL, $service service is not running"
+    exit 2
 fi
