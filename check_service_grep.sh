@@ -1,10 +1,9 @@
 #!/bin/bash
-# Nagios Plugin Bash Script - check_service.sh
-# This script checks if program is running
+# This script checks if program is running via grep
 # Check for missing parameters
 if [[ -z "$1" ]]
 then
-        echo "Missing parameters! Syntax: ./check_service.sh service_name"
+        echo "Missing parameters! Syntax: ./check_service_grep.sh service_name"
         exit 3
 fi
 

@@ -1,6 +1,5 @@
 #!/bin/bash
-# Nagios Plugin Bash Script - check_dns.sh
-# This script checks if program is running
+# This script checks if dns can be checked via "local" DNS
 # Check for missing parameters
 if [[ -z "$1" ]]
 then

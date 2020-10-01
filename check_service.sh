@@ -1,5 +1,4 @@
 #!/bin/bash
-# Nagios Plugin Bash Script - check_service.sh
 # This script checks if program is running
 # Check for missing parameters
 if [[ -z "$1" ]]
