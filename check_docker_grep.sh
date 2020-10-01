@@ -1,6 +1,5 @@
 #!/bin/bash
-# Nagios Plugin Bash Script - check_docker_grep.sh
-# This script checks if program is running
+# This script checks if program is running in the docker ps
 # Check for missing parameters
 if [[ -z "$1" ]]
 then

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This script checks if URL comes back with a 200
 # Check for missing parameters
 if [[ -z "$1" ]]
 then

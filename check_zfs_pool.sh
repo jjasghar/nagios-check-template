@@ -1,4 +1,5 @@
 #!/usr/local/bin/bash
+# Because you'll probably run this on FreeBSD ;) ^^
 
 if [ `zpool status -x | grep healthy | wc -l` = 1 ]
 then

@@ -1,5 +1,7 @@
 #!/bin/bash
+
 used_space=`df -h / | grep -v Filesystem | awk '{print $5}' | sed 's/%//g'`
+
 case $used_space in
   [1-84]*)
     echo "OK - $used_space% of disk space used."
